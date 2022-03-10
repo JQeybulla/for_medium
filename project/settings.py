@@ -57,6 +57,7 @@ INSTALLED_APPS = [
 
     # local apps
     'users.apps.UsersConfig',
+    'core.apps.CoreConfig',
 
     # 3rd party apps
     'allauth',
