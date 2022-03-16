@@ -47,6 +47,7 @@ else:
 # Application definition
 
 INSTALLED_APPS = [
+    'modeltranslation',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -149,7 +150,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru'
 
 TIME_ZONE = 'UTC'
 
@@ -158,6 +159,14 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+USE_I18N = True
+
+gettext = lambda s: s
+LANGUAGES = (
+    ('en', gettext('English')),
+    ('ru', gettext('Russian')),
+)
 
 
 # Static files (CSS, JavaScript, Images)

@@ -18,3 +18,11 @@ class News(models.Model):
 
     def __str__(self) -> str:
         return self.title
+
+class Person(models.Model):
+    name = models.CharField(max_length=200)
+    surname = models.CharField(max_length=200)
+    profession = models.CharField(max_length=300)
+
+    def __str__(self) -> str:
+        return self.name
